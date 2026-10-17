@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CallGuard 隐私政策</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
+h1 { border-bottom: 2px solid #1a237e; padding-bottom: 10px; }
+h2 { color: #1a237e; margin-top: 30px; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { background: #f5f5f5; }
+.lang-switch { text-align: right; margin-bottom: 20px; }
+.lang-switch a { color: #1a237e; text-decoration: none; margin-left: 15px; }
+</style>
+</head>
+<body>
+<div class="lang-switch"><a href="index.html">English</a></div>
+<h1>CallGuard 隐私政策</h1>
+<p><strong>生效日期：2026年10月18日</strong></p>
+
+<h2>核心承诺</h2>
+<p>CallGuard 的设计原则是<strong>零收集、零服务器、零账号</strong>。您的所有数据都只保存在您的手机本地，我们没有任何服务器接收您的数据。</p>
+
+<h2>我们收集什么</h2>
+<p><strong>我们不收集任何个人信息。</strong> 具体来说：</p>
+<ul>
+<li><strong>通讯录</strong>：仅在您的手机本地读取，用于识别来电是否为联系人。通讯录数据从不上传、从不外传。</li>
+<li><strong>通话音频</strong>：陌生来电筛选时，麦克风仅用于本地语音识别（5-8 秒），音频不保存、不上传、不外传。识别完成后立即丢弃。</li>
+<li><strong>通话记录</strong>：拦截记录、语音留言仅保存在您手机的本地数据库中。</li>
+</ul>
+
+<h2>网络使用说明</h2>
+<p>App 在以下情况会使用网络，所有传输均为 HTTPS 加密：</p>
+<ol>
+<li><strong>下载语音识别模型</strong>：首次使用时从 Vosk 官网（alphacephei.com）下载语音识别模型文件（中文约 48MB、英文约 42MB）。仅下载，不上传任何数据。</li>
+<li><strong>更新接听话术模板</strong>：App 启动时会从我们的公开 GitHub 仓库（github.com/xieleill1/callguard-templates）拉取最新的接听回复模板。<strong>仅下载，不上传</strong>——您的任何数据都不会发送到 GitHub。</li>
+<li><strong>Google Play 订阅</strong>：PRO 订阅的购买流程由 Google Play Billing 处理，支付信息由 Google 管理，我们不接触您的支付信息。</li>
+<li><strong>Google Drive 云同步（PRO 功能）</strong>：如您订阅 PRO 并登录 Google 账号，黑名单、设置、留言记录元数据会备份到您<strong>自己</strong>的 Google Drive 隐藏文件夹（appDataFolder）。该文件夹仅 CallGuard 可读写，您可以在 App 内随时删除备份。</li>
+</ol>
+
+<h2>权限说明</h2>
+<table>
+<tr><th>权限</th><th>用途</th></tr>
+<tr><td>读取手机状态</td><td>识别来电号码，判断是否为陌生来电</td></tr>
+<tr><td>接听/挂断电话</td><td>自动接听陌生来电进行筛选，挂断骚扰电话</td></tr>
+<tr><td>读取通讯录</td><td>识别联系人来电（联系人来电不受打扰）</td></tr>
+<tr><td>录音</td><td>筛选时录制对方语音做本地识别；PRO 用户录制自定义语音</td></tr>
+<tr><td>设为默认电话应用（可选）</td><td>增强拦截效果，不设置也能正常拨号</td></tr>
+</table>
+
+<h2>数据删除</h2>
+<p>卸载 App 即删除所有本地数据。如使用了 Drive 云同步，可在 App 内"设置 → 云同步"中删除云端备份，或直接在 Google 账号设置中撤销 CallGuard 的 Drive 权限。</p>
+
+<h2>儿童隐私</h2>
+<p>本 App 不针对 13 岁以下儿童，也不收集儿童信息。</p>
+
+<h2>政策更新</h2>
+<p>隐私政策更新时，我们会在 App 内通知您。继续使用即表示接受更新后的政策。</p>
+
+<h2>联系我们</h2>
+<p>如有隐私相关问题，请通过 GitHub Issues 联系我们：github.com/xieleill1/callguard-templates/issues</p>
+</body>
+</html>

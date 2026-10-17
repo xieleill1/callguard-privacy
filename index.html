@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CallGuard Privacy Policy</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; color: #333; }
+h1 { border-bottom: 2px solid #1a237e; padding-bottom: 10px; }
+h2 { color: #1a237e; margin-top: 30px; }
+table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+th { background: #f5f5f5; }
+.lang-switch { text-align: right; margin-bottom: 20px; }
+.lang-switch a { color: #1a237e; text-decoration: none; margin-left: 15px; }
+</style>
+</head>
+<body>
+<div class="lang-switch"><a href="zh.html">中文版</a></div>
+<h1>CallGuard Privacy Policy</h1>
+<p><strong>Effective Date: October 18, 2026</strong></p>
+
+<h2>Our Core Commitment</h2>
+<p>CallGuard is built on a <strong>zero-collection, zero-server, zero-account</strong> principle. All your data stays on your phone. We operate no servers that receive your data.</p>
+
+<h2>What We Collect</h2>
+<p><strong>We collect no personal information.</strong> Specifically:</p>
+<ul>
+<li><strong>Contacts</strong>: Read locally on your device only, to identify whether an incoming call is from a contact. Contact data is never uploaded or transmitted.</li>
+<li><strong>Call Audio</strong>: When screening unknown calls, the microphone is used solely for on-device speech recognition (5–8 seconds). Audio is not saved, not uploaded, and not transmitted. It is discarded immediately after recognition.</li>
+<li><strong>Call Records</strong>: Blocked-call logs and voicemail messages are stored only in the local database on your phone.</li>
+</ul>
+
+<h2>Network Usage</h2>
+<p>The app uses the network in the following cases. All transmissions are encrypted via HTTPS:</p>
+<ol>
+<li><strong>Downloading Speech Recognition Models</strong>: On first use, speech recognition model files are downloaded from the official Vosk website (alphacephei.com) — approximately 48 MB for Chinese, 42 MB for English. Download only; no data is uploaded.</li>
+<li><strong>Updating Greeting Templates</strong>: On launch, the app fetches the latest greeting templates from our public GitHub repository (github.com/xieleill1/callguard-templates). <strong>Download only, no upload</strong> — none of your data is sent to GitHub.</li>
+<li><strong>Google Play Subscriptions</strong>: PRO subscription purchases are processed by Google Play Billing. Payment information is handled by Google; we do not access it.</li>
+<li><strong>Google Drive Cloud Sync (PRO Feature)</strong>: If you subscribe to PRO and sign in with a Google account, your blacklist, settings, and voicemail metadata are backed up to a hidden folder (appDataFolder) in <strong>your own</strong> Google Drive. Only CallGuard can read and write this folder. You may delete cloud backups at any time via "Settings → Cloud Sync" in the app.</li>
+</ol>
+
+<h2>Permissions</h2>
+<table>
+<tr><th>Permission</th><th>Purpose</th></tr>
+<tr><td>Read Phone State</td><td>Identify incoming call numbers and detect unknown callers</td></tr>
+<tr><td>Answer / End Calls</td><td>Auto-answer unknown calls for screening; hang up on spam calls</td></tr>
+<tr><td>Read Contacts</td><td>Identify contact calls (contacts are never disturbed)</td></tr>
+<tr><td>Record Audio</td><td>Record caller speech for on-device recognition during screening; PRO users may record custom greetings</td></tr>
+<tr><td>Default Phone App (optional)</td><td>Enhances blocking effectiveness; dialing works normally without it</td></tr>
+</table>
+
+<h2>Data Deletion</h2>
+<p>Uninstalling the app deletes all local data. If you used Drive cloud sync, you may delete cloud backups via "Settings → Cloud Sync" in the app, or revoke CallGuard's Drive access in your Google account settings.</p>
+
+<h2>Children's Privacy</h2>
+<p>This app is not directed at children under 13, and we do not collect information from children.</p>
+
+<h2>Policy Updates</h2>
+<p>We will notify you in the app when this policy is updated. Continued use constitutes acceptance of the updated policy.</p>
+
+<h2>Contact Us</h2>
+<p>For privacy-related questions, reach us via GitHub Issues: github.com/xieleill1/callguard-templates/issues</p>
+</body>
+</html>
